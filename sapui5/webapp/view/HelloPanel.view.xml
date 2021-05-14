@@ -1,0 +1,14 @@
+<mvc:View controllerName="egb.sapui5.controller.HelloPanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core">
+    <Panel headerText="{i18n>helloPanel}" class="sapUiResponsiveMargin" width="auto">
+        <content>
+            <Button icon="sap-icon://action" text="{i18n>helloHelloButton}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
+            <Button text="{i18n>showHelloButton}" press=".onShowHello" class="sapUiSmallMarginEnd"/>
+            <Input value="{/recipient/name}" valueLiveUpdate="true" width="60%"/>
+            <Text text="Hello {/recipient/name}" class="sapUiSmallMargin boldElement"/>
+        </content>
+    </Panel>
+    <core:Fragment fragmentName="egb.sapui5.view.Form01" type="XML"/>
+</mvc:View>
