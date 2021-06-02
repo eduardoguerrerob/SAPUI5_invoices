@@ -80,13 +80,42 @@
       "runtimeExecutable": "npm",
       "args": [
         "--backendConfig",
-        "[{\"path\":\"/sap\",\"destination\":\"Northwind\"}]"
+        "[{\"path\":\"/V2\",\"destination\":\"Northwind\"}]"
       ],
       "windows": {
         "runtimeExecutable": "npm.cmd",
         "args": [
           "--backendConfig",
-          "\"[{\\\"path\\\":\\\"/sap\\\",\\\"destination\\\":\\\"Northwind\\\"}]\""
+          "\"[{\\\"path\\\":\\\"/V2\\\",\\\"destination\\\":\\\"Northwind\\\"}]\""
+        ]
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/invoices/sapui5\"}"
+      }
+    },
+    {
+      "name": "sapui5 xxx",
+      "cwd": "${workspaceFolder}/sapui5",
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "args": [
+        "--",
+        "--backendConfig",
+        "[{\"path\":\"/V2\",\"destination\":\"Northwind\"}] "
+      ],
+      "windows": {
+        "runtimeExecutable": "npm.cmd",
+        "args": [
+          "--",
+          "--backendConfig",
+          "\"[{\\\"path\\\":\\\"/V2\\\",\\\"destination\\\":\\\"Northwind\\\"}]\" "
         ]
       },
       "console": "internalConsole",

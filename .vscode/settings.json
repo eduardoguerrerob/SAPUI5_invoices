@@ -1,4 +1,5 @@
 {
     "editor.autoSave": "off",
-    "[xml].editor.defaultFormatter": "dotjoshjohnson.xml"
+    "[xml].editor.defaultFormatter": "dotjoshjohnson.xml",
+    "actions": []
 }
